@@ -21,3 +21,6 @@ fi
 # Create aliases for the functions
 alias move-images='move_images'
 alias move-videos='move_videos'
+alias move-documents='move_documents'
+alias compress-dir='compress_directory'
+alias count-files='count_files_by_type'

@@ -24,3 +24,12 @@ alias move-videos='move_videos'
 alias move-documents='move_documents'
 alias compress-dir='compress_directory'
 alias count-files='count_files_by_type'
+
+
+# SSH connect
+
+if [ -f ~/.shell/private/.sshconnect.sh ]; then
+  . ~/.shell/private/.sshconnect.sh
+fi
+
+alias remote-connect=ssh-connect

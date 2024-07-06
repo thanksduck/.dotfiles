@@ -1,0 +1,9 @@
+[user]
+	name = sivm99
+	email = 90413888+sivm99@user.noreply.github.com
+[credential]
+	helper = store
+[http]
+	version = HTTP/1.1
+[init]
+	defaultBranch = main

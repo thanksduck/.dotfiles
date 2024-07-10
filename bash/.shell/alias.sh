@@ -1,3 +1,7 @@
+####reload zsh
+alias bp='vim ~/.zshrc'
+alias sa='source ~/.zshrc;echo "ZSH aliases sourced."'
+
 #color into ls
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'

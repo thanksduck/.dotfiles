@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 count_files_by_type() {
     [[ $# -ne 2 ]] && { echo "Usage: count_files_by_type directory extension"; return 1; }
     [[ ! -d "$1" ]] && { echo "Directory does not exist: $1"; return 1; }

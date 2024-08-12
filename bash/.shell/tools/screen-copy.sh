@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 screen-copy() {
     local ip=192.168.1.4 port=5555 verbose=0
 

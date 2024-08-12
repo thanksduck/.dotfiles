@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 music-d() {
     local link=""
     local quality=""

@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 tailwind_setup() {
     local do_it=false
     local verbose=false

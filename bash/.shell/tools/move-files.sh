@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 move_files() {
     local type=$1 src=$2 dst=$3 extensions
 

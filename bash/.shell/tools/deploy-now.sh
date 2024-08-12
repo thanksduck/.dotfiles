@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 deploy-now() {
     local source_dir=""
     local dest_dir=""

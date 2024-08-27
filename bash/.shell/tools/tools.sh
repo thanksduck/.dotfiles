@@ -9,12 +9,13 @@ scripts=(
     "deploy-now.sh"
     "tailwind.sh"
     "music-d.sh"
+    "music-download.sh"
 )
-
+local pathSuffix="/Users/shivam/.dotfiles/bash/.shell/tools"
 # Source all scripts
 for script in "${scripts[@]}"; do
-    if [ -f "./$script" ]; then
-        source "./$script"
+    if [ -f "$pathSuffix/$script" ]; then
+        source "$pathSuffix/$script"
     else
         echo "Warning: $script not found"
     fi
@@ -27,12 +28,12 @@ move_documents() { move_files documents "$@"; }
 
 # Main execution
 main() {
-    echo "File operations script loaded."
-    echo "Available functions:"
-    echo "- move_images"
-    echo "- move_videos"
-    echo "- move_documents"
-    # Add other available functions here
+    echo "Tools.sh Loaded Everything working fine"
+    # echo "Available functions:"
+    # echo "- move_images"
+    # echo "- move_videos"
+    # echo "- move_documents"
+    # # Add other available functions here
 }
 
 main

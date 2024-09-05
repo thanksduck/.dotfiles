@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Define an array of script files to source
 scripts=(
@@ -10,6 +10,7 @@ scripts=(
     "tailwind.sh"
     "music-d.sh"
     "music-download.sh"
+    "git-alias.sh"
 )
 local pathSuffix="/Users/shivam/.dotfiles/bash/.shell/tools"
 # Source all scripts

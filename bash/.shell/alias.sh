@@ -1,4 +1,4 @@
-####reload zsh
+#!/usr/bin/env bash
 alias bp='vim ~/.zshrc'
 alias sa='source ~/.zshrc;echo "ZSH aliases sourced."'
 
@@ -51,3 +51,6 @@ fi
 
 # npm alias
 alias tailwind='tailwind_setup -v'
+
+# shorten_url alias
+alias surl='shorten_url'

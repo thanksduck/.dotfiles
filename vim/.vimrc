@@ -1,5 +1,6 @@
 syntax on
-set ts=4 sw=4 
+set paste
+set ts=4 sw=4
 set relativenumber
 set nu
 set mouse=a

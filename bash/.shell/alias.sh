@@ -3,7 +3,8 @@ alias bp='vim ~/.zshrc'
 alias sa='source ~/.zshrc;echo "ZSH aliases sourced."'
 
 #color into ls
-alias ls='colorls'
+# alias ls='colorls'
+alias ls='ls --color=auto -F'
 alias grep='grep --color=auto'
 alias efgrep='fgrep --color=auto'
 alias grep='egrep --color=auto'
@@ -12,8 +13,8 @@ alias grep='egrep --color=auto'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -Cp'
-alias python='python3'
-alias py='python3'
+alias python='/opt/homebrew/bin/python3'
+alias py='/opt/homebrew/bin/python3'
 
 
 # Create aliases for the functions

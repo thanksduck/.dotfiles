@@ -1,6 +1,29 @@
 #!/usr/bin/env bash
 compress_directory() {
-    [[ $# -ne 2 ]] && { echo "Usage: compress_directory source_directory output_file"; return 1; }
-    [[ ! -d "$1" ]] && { echo "Source directory does not exist: $1"; return 1; }
-    tar -czvf "$2" -C "$1" . && echo "Directory $1 has been compressed into $2."
+    local source_dir output_file
+
+    if [[ $# -ne 2 ]]; then
+        echo "Usage: compress_directory <source_directory> <output_file.tar.gz>" >&2
+        return 1
+    fi
+
+    source_dir="$1"
+    output_file="$2"
+
+    if [[ ! -d "$source_dir" ]]; then
+        echo "Error: Source directory does not exist: $source_dir" >&2
+        return 1
+    fi
+
+    if [[ ! "$output_file" =~ \.tar\.gz$ ]]; then
+        output_file="${output_file}.tar.gz"
+        echo "Warning: Added .tar.gz extension to output file" >&2
+    fi
+
+    if tar -czvf "$output_file" -C "$source_dir" .; then
+        echo "Successfully compressed directory $source_dir into $output_file"
+    else
+        echo "Error: Failed to compress directory" >&2
+        return 1
+    fi
 }

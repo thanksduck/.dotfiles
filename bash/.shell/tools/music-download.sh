@@ -112,7 +112,7 @@ music-download () {
     fi
 
     # Rename the file with the chosen or generated name
-    mv "$HOME/Movies/Youtube-dl/output.mp3" "$HOME/Movies/Youtube-dl/$final_name"
+    mv "$HOME/Movies/Youtube-dl/output.mp3" "$HOME/Movies/Youtube-dl/Music/$final_name"
     echo "The song has been renamed to '$final_name'."
 
     # Clean up temporary files

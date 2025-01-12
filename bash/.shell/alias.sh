@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 alias bp='vim ~/.zshrc'
-alias sa='source ~/.zshrc;echo "ZSH aliases sourced."'
+alias sas='source ~/.zshrc;echo "ZSH aliases sourced."'
 
 #color into ls
 # alias ls='colorls'
@@ -15,7 +15,6 @@ alias la='ls -A'
 alias l='ls -Cp'
 alias python='/opt/homebrew/bin/python3'
 alias py='/opt/homebrew/bin/python3'
-
 
 # Create aliases for the functions
 alias move-images='move_images'
@@ -34,7 +33,6 @@ alias scrcpy='scrcpy --shortcut-mod=lalt,ralt'
 alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 alias td='tailscale status && (tailscale status | grep -qE "sora.*offers exit node" && tailscale down) || (tailscale status | grep -qE "sora.*active; exit node" && tailscale set --exit-node= && tailscale down)'
 
-
 ### sourcing from various files always keep it at the end.
 
 # alias from tools folder
@@ -49,9 +47,30 @@ if [ -f ~/.shell/private/.sshconnect.sh ]; then
   . ~/.shell/private/.sshconnect.sh
 fi
 
-
 # npm alias
 alias tailwind='tailwind_setup -v'
 
 # shorten_url alias
 alias surl='shorten_url'
+# open these shorten urls
+ol() {
+  [ $# -eq 0 ] && echo "Usage: ol <suffix> [-a] [app]" && return 1
+  if [ "$2" = '-a' ]; then
+    [ -z "$3" ] && echo "Missing app name" && return 1
+    open -a "$3" "$URL_HOST/$1" && return 0
+  fi
+  open -a Safari "${URL_HOST}/$1"
+}
+
+alias yt='ol y'
+alias lc='ol l'
+
+# brew service alias
+alias m-start='brew services start mongodb-community'
+alias m-stop='brew services stop mongodb-community'
+alias p-start='brew services start postgresql@17'
+alias p-stop='brew services stop postgresql@17'
+alias pm-start='p-start && m-start'
+alias pm-stop='p-stop && m-stop'
+alias mgc='/Applications/MEGAcmd.app/Contents/MacOS/MEGAcmdShell;exit'
+# alias z='zoxide'

@@ -12,6 +12,7 @@ scripts=(
     "music-download.sh"
     "git-alias.sh"
     "sh-url.sh"
+    "oas.sh"
 )
 local pathSuffix="/Users/shivam/.dotfiles/bash/.shell/tools"
 # Source all scripts

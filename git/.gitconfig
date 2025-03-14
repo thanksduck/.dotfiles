@@ -1,6 +1,7 @@
 [user]
 	name = sivm99
 	email = git.v7gr4@simplelogin.fr
+	signingkey = 2F44225536FFEAFBCC8C5950444D5FDF9440391E
 [credential]
 	helper = store
 [http]
@@ -9,3 +10,13 @@
 	defaultBranch = main
 [url "git@github.com:"]
 	insteadOf = https://github.com/
+
+[push]
+  autoSetupRemote = true
+  default = current
+[core]
+	excludesFile = ~/.gitignore
+[commit]
+	gpgsign = true
+[gpg]
+	program = /opt/homebrew/bin/gpg

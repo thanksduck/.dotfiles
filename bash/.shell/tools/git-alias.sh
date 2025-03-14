@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-function lazyg(){
-    git add .
-    git commit -a -m "$1"
-    git push
+function lazyg() {
+  git add .
+  git commit -S -a -m "$1"
+  git push
 }
 
 alias ga="git add"

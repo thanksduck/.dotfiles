@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+if [ -f ~/.zprofile ]; then
+  . ~/.zprofile
+fi
 alias bp='vim ~/.zshrc'
 alias sas='source ~/.zshrc;echo "ZSH aliases sourced."'
 

@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh?
 
 # Define an array of script files to source
 scripts=(

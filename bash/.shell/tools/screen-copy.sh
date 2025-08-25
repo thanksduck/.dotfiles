@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh?
 screen-copy() {
     local ip=192.168.1.4 port=5555 verbose=0
 

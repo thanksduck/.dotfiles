@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh?
 count_files_by_type() {
     [[ $# -ne 2 ]] && { echo "Usage: count_files_by_type directory extension"; return 1; }
     [[ ! -d "$1" ]] && { echo "Directory does not exist: $1"; return 1; }

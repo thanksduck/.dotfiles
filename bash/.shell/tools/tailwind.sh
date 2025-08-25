@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh?
 tailwind_setup() {
     local do_it=false
     local verbose=false

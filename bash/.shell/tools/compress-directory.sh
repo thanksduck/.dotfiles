@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh?
 compress_directory() {
     local source_dir output_file
 

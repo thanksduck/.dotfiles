@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh?
 deploy-now() {
     local source_dir=""
     local dest_dir=""

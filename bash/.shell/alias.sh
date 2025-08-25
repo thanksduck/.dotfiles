@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh?
 if [ -f ~/.zprofile ]; then
   . ~/.zprofile
 fi

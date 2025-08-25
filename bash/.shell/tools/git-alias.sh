@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh?
 
 function lazyg() {
   # Ensure GPG agent is running

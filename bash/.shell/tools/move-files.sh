@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh?
 move_files() {
     local type=$1 src=$2 dst=$3 extensions
 

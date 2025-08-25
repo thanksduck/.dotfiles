@@ -1,7 +1,7 @@
 [user]
 	name = sivm99
 	email = git.v7gr4@simplelogin.fr
-	signingkey = 2F44225536FFEAFBCC8C5950444D5FDF9440391E
+	signingkey = B94FA1ED0052EAD3DE26D83DFA3F363C8916D6F7
 [credential]
 	helper = store
 [http]

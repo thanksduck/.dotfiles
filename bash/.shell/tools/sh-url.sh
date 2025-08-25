@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh?
 
 shorten_url() {
     [ -z "$URL_HOST" ] && { echo "Error: URL_HOST is not set."; return 1; }

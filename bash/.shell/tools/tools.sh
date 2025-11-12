@@ -13,6 +13,7 @@ scripts=(
     "git-alias.sh"
     "sh-url.sh"
     "oas.sh"
+   # "start-psql.sh"
 )
 local pathSuffix="/Users/shivam/.dotfiles/bash/.shell/tools"
 # Source all scripts
